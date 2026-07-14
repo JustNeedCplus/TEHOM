@@ -1,0 +1,146 @@
+; Ginnie Springs Underwater Cave System
+; High Springs, Florida, USA
+; Approximate centreline survey for SAR planning / educational use.
+; Based on published dive reports and cave diving literature.
+; NOT a navigational survey — always dive with current certified surveys.
+;
+; Cave stats (published):
+;   Max depth: ~30 m / 97 ft
+;   Total surveyed: ~3,000 m
+;   Visibility: typically 15-30 m (can drop to zero in disturbed passages)
+;   Flow: mild outflow from spring vent
+;   Type: freshwater (first-magnitude spring)
+;
+; SAR NOTES:
+;   - The Lips restriction limits equipment size beyond station L0
+;   - Twins A/B branch at station M10; parallel routes reconnect
+;   - Side passages have silty floors — zero visibility if disturbed
+;   - Guideline always present on main passage
+
+*begin ginnie_springs
+
+*title "Ginnie Springs Underwater Cave System"
+
+; Field order: from  to  tape(m)  compass  clino  left  right  up  down
+*data normal from to tape compass clino left right up down
+
+; ── BALLROOM (entrance cavern, 5-8 m depth) ─────────────────────────────────
+; Large domed cavern at spring vent. Daylight zone extends ~15 m in.
+B0    B1    6.2   045   -3   5.5   6.0   2.8   1.5
+B1    B2    5.8   050   -5   6.0   6.5   3.0   1.8
+B2    B3    4.5   055   -4   7.2   7.0   3.5   2.0
+B3    B4    5.2   048   -6   8.0   7.5   4.0   2.2
+B4    B5    4.8   052   -5   9.0   8.0   4.5   2.5
+B5    B6    6.1   042   -7   8.5   7.8   4.2   2.3
+B6    B7    5.4   050   -4   7.5   7.0   3.8   2.0
+B7    B8    7.2   055   -6   6.5   6.2   3.2   1.8
+B8    B9    5.6   048   -8   5.5   5.8   3.0   1.6
+B9    M0    4.9   045   -5   5.0   5.2   2.8   1.5
+
+; ── MAIN PASSAGE (8-20 m depth) ─────────────────────────────────────────────
+; Primary NE-trending main passage. Classic bowtie cross-section.
+; Caveline on right-hand wall for outbound navigation.
+M0    M1    7.5   060   -8   3.8   3.5   2.0   1.5
+M1    M2    8.2   058  -10   3.5   3.2   1.8   1.4
+M2    M3    9.1   065   -7   4.0   3.8   2.2   1.6
+M3    M4    8.8   062   -9   4.2   4.0   2.5   1.8
+M4    M5   10.2   060   -6   4.5   4.2   2.8   2.0
+M5    M6    9.5   055   -5   4.8   4.5   3.0   2.2
+M6    M7    8.9   065   -8   5.0   4.8   3.2   2.4
+M7    M8   11.2   060   -7   5.2   5.0   3.5   2.6
+M8    M9    9.8   058   -9   5.0   4.8   3.2   2.4
+M9    M10   8.5   062   -6   4.8   4.5   3.0   2.2
+
+; Junction M10 — Twins branch off here to NW, main continues NE
+M10   M11  10.5   065   -8   4.5   4.2   2.8   2.0
+M11   M12   9.2   058   -7   4.2   4.0   2.5   1.8
+M12   M13   8.8   060   -9   4.0   3.8   2.2   1.6
+M13   M14   9.5   063   -6   3.8   3.5   2.0   1.5
+M14   M15  10.8   058   -8   3.5   3.2   1.8   1.4
+
+; Junction M15 — Side passages A/B branch off here
+M15   M16   9.1   060   -7   3.2   3.0   1.6   1.2
+M16   M17   8.7   065   -9   3.0   2.8   1.5   1.1
+M17   M18  10.2   062   -6   2.8   2.6   1.4   1.0
+M18   M19   9.5   058   -8   2.6   2.4   1.3   0.9
+M19   M20   8.8   060   -7   2.5   2.3   1.2   0.8
+
+; ── GALLERY (18-22 m depth) ──────────────────────────────────────────────────
+; Wide, tall gallery section. Key navigation landmark for SAR briefings.
+M20   G1    8.5   070   -4   4.5   5.0   4.0   3.5
+G1    G2    9.2   068   -5   5.0   5.5   5.0   4.0
+G2    G3   10.5   072   -3   6.0   6.5   6.0   5.0
+G3    G4   11.2   070   -4   7.0   7.5   7.0   6.0
+G4    G5   10.8   068   -5   7.5   8.0   7.5   6.5
+G5    G6    9.5   072   -3   7.0   7.5   7.0   6.0
+G6    G7    8.8   070   -4   6.0   6.5   6.0   5.0
+G7    L0    9.2   068   -5   5.0   5.5   5.0   4.0
+
+; ── THE LIPS restriction (22-25 m depth) ─────────────────────────────────────
+; Passage narrows sharply. SAR NOTE: width ~1.0 m, height ~0.8 m at tightest.
+; Limits rescue equipment transport. Body recovery may require dismantling.
+L0    L1    5.5   075   -5   1.5   1.8   1.0   0.8
+L1    L2    4.8   073   -6   1.2   1.5   0.9   0.7
+L2    L3    5.2   075   -5   1.0   1.2   0.8   0.6
+L3    L4    4.9   073   -7   1.2   1.5   0.9   0.7
+L4    D0    5.5   075   -5   1.5   1.8   1.0   0.8
+
+; ── DEEP SECTION (25-30 m depth) ─────────────────────────────────────────────
+; Beyond the restriction. Widest at max depth. Narcosis depth for air divers.
+; SAR NOTE: Deco obligation likely for rescuers. Trimix recommended.
+D0    D1    8.2   078   -8   2.5   2.8   2.0   1.5
+D1    D2    9.5   075   -9   3.0   3.2   2.5   2.0
+D2    D3   10.2   080   -7   3.5   3.8   3.0   2.5
+D3    D4    9.8   078  -10   4.0   4.2   3.5   3.0
+D4    D5    8.5   075   -8   4.5   4.8   4.0   3.5
+D5    D6    9.2   080   -9   4.2   4.5   3.8   3.2
+D6    D7   10.5   078   -7   4.0   4.2   3.5   3.0
+D7    D8    9.8   075   -8   3.8   4.0   3.2   2.8
+D8    D9    8.5   080   -9   3.5   3.8   3.0   2.5
+D9    D10   9.2   078   -7   3.2   3.5   2.8   2.2
+
+; ── TWINS BRANCH A — north tunnel (12-18 m depth) ───────────────────────────
+; Northern Twins tunnel. Starts at junction M10.
+M10   TA1   7.8   020   -5   2.0   2.2   1.5   1.2
+TA1   TA2   8.5   018   -6   2.2   2.5   1.8   1.4
+TA2   TA3   9.2   022   -5   2.5   2.8   2.0   1.6
+TA3   TA4   8.8   020   -7   2.8   3.0   2.2   1.8
+TA4   TA5   9.5   018   -5   3.0   3.2   2.5   2.0
+TA5   TA6   8.2   022   -6   2.8   3.0   2.2   1.8
+TA6   TA7   9.0   020   -5   2.5   2.8   2.0   1.6
+TA7   TA8   8.5   018   -7   2.2   2.5   1.8   1.4
+TA8   TA9   7.8   022   -5   2.0   2.2   1.5   1.2
+TA9   TA10  8.2   020   -6   1.8   2.0   1.3   1.0
+
+; ── TWINS BRANCH B — south tunnel (12-18 m depth) ───────────────────────────
+; Southern Twins tunnel. Starts at same junction M10. Parallel to Twins A.
+M10   TB1   7.5   010   -5   2.0   2.2   1.5   1.2
+TB1   TB2   8.2   012   -6   2.2   2.5   1.8   1.4
+TB2   TB3   8.8   010   -5   2.5   2.8   2.0   1.6
+TB3   TB4   9.2   012   -7   2.8   3.0   2.2   1.8
+TB4   TB5   8.5   010   -5   3.0   3.2   2.5   2.0
+TB5   TB6   9.0   012   -6   2.8   3.0   2.2   1.8
+TB6   TB7   8.2   010   -5   2.5   2.8   2.0   1.6
+TB7   TB8   8.8   012   -7   2.2   2.5   1.8   1.4
+TB8   TB9   7.5   010   -5   2.0   2.2   1.5   1.2
+TB9   TB10  8.2   012   -6   1.8   2.0   1.3   1.0
+
+; ── SIDE PASSAGE A — north branch off main at M15 (15-20 m depth) ────────────
+M15   SA1   5.5   355   -4   1.5   1.8   1.2   1.0
+SA1   SA2   6.2   350   -5   1.8   2.0   1.5   1.2
+SA2   SA3   5.8   355   -4   2.0   2.2   1.8   1.4
+SA3   SA4   6.5   350   -6   2.2   2.5   2.0   1.6
+SA4   SA5   5.2   355   -4   2.0   2.2   1.8   1.4
+SA5   SA6   6.0   350   -5   1.8   2.0   1.5   1.2
+SA6   SA7   5.5   355   -4   1.5   1.8   1.2   1.0
+
+; ── SIDE PASSAGE B — south branch off main at M15 (16-21 m depth) ────────────
+; Silty floor — SAR NOTE: visibility drops to zero immediately if disturbed.
+M15   SB1   4.8   180   -5   1.2   1.5   1.0   0.8
+SB1   SB2   5.5   185   -6   1.5   1.8   1.2   1.0
+SB2   SB3   5.2   180   -5   1.8   2.0   1.5   1.2
+SB3   SB4   6.0   185   -7   2.0   2.2   1.8   1.4
+SB4   SB5   4.8   180   -5   1.8   2.0   1.5   1.2
+SB5   SB6   5.5   185   -6   1.5   1.8   1.2   1.0
+
+*end ginnie_springs
